@@ -1,9 +1,6 @@
-class Corn:
-    def __init__(self):
-        self.grains = 0
+from farm.crop import Crop
 
+
+class Corn(Crop):
     def water(self):
         self.grains += 10
-
-    def ripe(self):
-        return self.grains >= 15
